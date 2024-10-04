@@ -15,3 +15,9 @@ add_executable(minimal_cuda  src/minimal_cuda.cu)
 set_target_properties(minimal_cuda PROPERTIES
     CUDA_ARCHITECTURES 61
 )
+
+# Add executable target
+add_executable(matrix_operations src/matrix_operations.cu)
+
+# Set the compute capability (modify according to your GPU)
+set_target_properties(matrix_operations PROPERTIES CUDA_ARCHITECTURES 61)
