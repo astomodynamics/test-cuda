@@ -24,4 +24,9 @@ add_executable(cublas_example src/cublas_example.cu)
 target_link_libraries(cublas_example /usr/local/cuda/lib64/libcublas.so)
 set_target_properties(cublas_example PROPERTIES CUDA_ARCHITECTURES 61)
 
+# Add an executable
+add_executable(dynamics_integration src/dynamics_integration.cu)
+set_target_properties(dynamics_integration PROPERTIES CUDA_ARCHITECTURES 61)
+
+
 
